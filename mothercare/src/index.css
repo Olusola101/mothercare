@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Original palette: lavender, muted rose, warm cream, white, with a restrained dark-purple accent.
+   System fonts only, so no third-party font requests leak visits. */
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --color-cream-50: #fdf9f4;
+  --color-cream-100: #f8f0e6;
+  --color-lavender-50: #f6f2fb;
+  --color-lavender-100: #ece4f6;
+  --color-lavender-200: #d9c9ee;
+  --color-lavender-500: #8a63c0;
+  --color-blush-50: #fcf1f3;
+  --color-blush-100: #f8dfe5;
+  --color-blush-300: #e8a8b8;
+  --color-blush-700: #9d3a56;
+  --color-plum-700: #5b3a8c;
+  --color-plum-800: #472b70;
+  --color-plum-900: #2f1d4a;
+  --color-ink: #2b2433;
+  --color-ink-muted: #625770;
+  --color-danger: #a12a2a;
+  --color-success: #2f6b4a;
+
+  --shadow-soft: 0 1px 2px rgb(47 29 74 / 0.06), 0 8px 24px rgb(47 29 74 / 0.06);
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-cream-50);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
